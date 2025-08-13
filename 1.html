@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caballos</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Mundo de los Caballos</h1>
+        <nav>
+            <ul>
+                <li><a href="#info">Información</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="info">
+        <h2>Información sobre Caballos</h2>
+        <p>Los caballos son animales mamíferos herbívoros que han sido domesticados por los humanos durante miles de años. Se utilizan para el transporte, el deporte y como compañeros.</p>
+        <p>Existen muchas razas de caballos, como el árabe, el pura sangre y el percherón.</p>
+        <button id="mostrar-mas" onclick="mostrarMasInfo()">Mostrar Más Información</button>
+        <p id="info-extra" style="display: none;">Los caballos pueden correr a velocidades de hasta 88 km/h y tienen una esperanza de vida de alrededor de 25-30 años.</p>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galería de Imágenes</h2>
+        <img src="Caballo-Percherón.webp" alt="Caballo 1">
+        <img src="caballo-arabe-negro_H123925_L1-6.jpg" alt="Caballo 2">
+        <img src="razas-de-caballos-pura-sangre.jpg" alt="Caballo 3">
+    </section>
+    
+    <section id="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form id="contacto-form" onsubmit="validarFormulario(event)">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje-exito" style="display: none;">Formulario enviado con éxito.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Página sobre Caballos</p>
+    </footer>
+    
+    <script src="1.js"></script>
+</body>
+</html>
